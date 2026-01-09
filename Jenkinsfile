@@ -12,8 +12,7 @@ pipeline {
             dockerImage.tag("${env.BUILD_NUMBER}")
         }
     }
-
-    }
+}
     stage("Scan Image") {
       steps {
         sh "echo 'Scan Image...'"
